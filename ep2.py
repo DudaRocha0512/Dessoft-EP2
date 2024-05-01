@@ -1,4 +1,15 @@
 import random
+def mostrarMapa(mat1, mat2):
+    print('   A  B  C  D  E  F  G  H  I  J    A  B  C  D  E  F  G  H  I  J')
+    for linha in range(10):
+        print(f'{linha+1:2d}', end='')
+        for coluna in range(10):
+            print(f' {mat1[linha][coluna]} ', end='')
+        print(f'    {linha+1:2d}', end='')
+        for coluna in range(10):
+            print(f' {mat2[linha][coluna]} ', end='')
+        print()
+
 def posicao_suporta(mapa, n_blocos, linha, coluna, orientacao):
     tamanho_mapa = len(mapa)
     if linha < 0 or coluna < 0 or linha >= tamanho_mapa or coluna >= tamanho_mapa:
