@@ -291,7 +291,6 @@ def aloca_navios_jog(mapa,blocos_jog):
                 lista_linhaj = '  '.join(linha_j)
                 print(lista_linhaj)
 
-
     return mapa
 
 mapa_novo_jog = aloca_navios_jog(mapa_jog,blocos_jog)
